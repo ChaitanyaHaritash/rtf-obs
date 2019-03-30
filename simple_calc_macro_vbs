@@ -1,0 +1,26 @@
+Private Sub Document_Open()
+Test
+End Sub
+
+Private Sub DocumentOpen()
+Test
+End Sub
+
+Private Sub Auto_Open()
+Test
+End Sub
+
+Private Sub AutoOpen()
+Test
+End Sub
+
+Private Sub Auto_Exec()
+Test
+End Sub
+
+Private Sub Test()
+    Dim shell
+    Dim out
+    Set shell = VBA.CreateObject("WScript.Shell")
+    out = shell.Run("calc.exe", 0, False)
+End Sub
